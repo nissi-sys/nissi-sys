@@ -72,13 +72,13 @@ export default function Sidebar({ userRole, userName, userEmail }: SidebarProps)
             <div className="flex items-center gap-3 px-4 py-5 relative" style={{ borderBottom: "1px solid var(--color-border)" }}>
                 <div className="flex-shrink-0 flex items-center justify-center w-full px-2">
                     <img
-                        src={collapsed ? "/nissi logo B.png" : "/nissi completo W.png"}
+                        src={collapsed ? "/nissi_logo_B.png" : "/nissi_completo_W.png"}
                         alt="Logo"
                         className="object-contain transition-all duration-500 drop-shadow-sm dark:hidden"
                         style={{ width: collapsed ? '40px' : '100%', maxWidth: '180px', height: collapsed ? '40px' : 'auto', maxHeight: '60px', filter: 'drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.5))' }}
                     />
                     <img
-                        src={collapsed ? "/nissi logo B.png" : "/nissi completo B.png"}
+                        src={collapsed ? "/nissi_logo_B.png" : "/nissi_completo_B.png"}
                         alt="Logo Dark"
                         className="object-contain transition-all duration-500 drop-shadow-sm hidden dark:block"
                         style={{ width: collapsed ? '40px' : '100%', maxWidth: '180px', height: collapsed ? '40px' : 'auto', maxHeight: '60px', filter: 'drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.2))' }}
