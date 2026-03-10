@@ -11,11 +11,6 @@ export default function LoginPage() {
     const [error, setError] = useState("");
     const [loading, setLoading] = useState(false);
 
-    useEffect(() => {
-        // Force light mode on login page
-        document.documentElement.classList.remove("dark");
-    }, []);
-
     async function handleSubmit(e: React.FormEvent) {
         e.preventDefault();
         setError("");
@@ -57,10 +52,16 @@ export default function LoginPage() {
                 <div className="text-center mb-10 animate-fade-in">
                     <div className="inline-flex items-center justify-center mb-5 w-full mx-auto" style={{ maxWidth: '280px' }}>
                         <img
-                            src="/logo1.png"
+                            src="/nissi completo W.png"
                             alt="Logo"
-                            className="w-full h-auto object-contain drop-shadow-md"
+                            className="w-full h-auto object-contain drop-shadow-md transition-opacity duration-500 dark:hidden"
                             style={{ maxHeight: '120px', filter: 'drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.8))' }}
+                        />
+                        <img
+                            src="/nissi completo B.png"
+                            alt="Logo Dark"
+                            className="w-full h-auto object-contain drop-shadow-md transition-opacity duration-500 hidden dark:block"
+                            style={{ maxHeight: '120px', filter: 'drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.2))' }}
                         />
                     </div>
                     <div className="gold-divider mt-4" />
