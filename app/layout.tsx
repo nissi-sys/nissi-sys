@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     title: "Yubiescalona",
     description: "Sistema Profesional de Gestion",
     icons: {
-        icon: "/nissi logo B.png",
+        icon: "/nissi_logo_B.png",
     },
 };
 

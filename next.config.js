@@ -7,6 +7,9 @@ const nextConfig = {
         config.resolve.alias.canvas = false;
         return config;
     },
+    generateBuildId: async () => {
+        return 'build-' + Date.now();
+    },
 };
 
 module.exports = nextConfig;
